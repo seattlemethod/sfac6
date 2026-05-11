@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 2025-11-19 -->
+<!-- Theory Schema -->
+<?xbrlsite name='Source' value='XBRL Site (Azure)'?>
+<?xbrlsite name='CreatedBy' value='Charles Hoffman, CPA'?>
+<?xbrlsite name='CreatedDate' value='2026-05-10'?>
+<?xbrlsite name='ReportingSchemeTitle' value='SFAC6 Elements of Financial Statement'?>
+<?xbrlsite name='Description' value='Financial reporting framework working proof of concept which uses SFAC6 elements of financial statements from conceptual framework as if it were a financial reporting framework.'?>
+<?xbrlsite name='ReportingStyles' value='../fac/reporting-styles-cm-ref.xml'?>
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+
+  xmlns:disclosures='https://github.com/seattlemethod/sfac6/disclosures'
+  xmlns:dm='https://github.com/seattlemethod/sfac6/dm'
+  xmlns:fac='https://github.com/seattlemethod/sfac6/fac'
+
+  xmlns:sfac6='https://github.com/seattlemethod/sfac6'
+  xmlns:sfac6-entryPoint='https://github.com/seattlemethod/sfac6-entryPoint'
+  xmlns:sfac6-theory='https://github.com/seattlemethod/sfac6-theory'
+  targetNamespace='https://github.com/seattlemethod/sfac6-theory'
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+    <appinfo>
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='types-BS1-IS1-rules-def.xml' xlink:title='Types' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='dr-rules-def.xml' xlink:title='Reporting Checklist' />
+
+
+
+    </appinfo>
+  </annotation>
+<import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+
+<import namespace='https://github.com/seattlemethod/sfac6-entryPoint' schemaLocation='sfac6-entryPoint.xsd' />
+
+<import namespace='https://github.com/seattlemethod/sfac6/fac' schemaLocation='fac.xsd' />
+<import namespace='https://github.com/seattlemethod/sfac6/disclosures' schemaLocation='disclosures.xsd' />
+<import namespace='https://github.com/seattlemethod/sfac6/dm' schemaLocation='dm.xsd' />
+
+
+</schema>

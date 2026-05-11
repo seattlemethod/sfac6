@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation=" http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+
+  <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_BalanceSheet" xlink:label="disclosures_BalanceSheet" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_BalanceSheet" xlink:to="disclosures_BalanceSheet_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="disclosures_BalanceSheet_lbl" xml:lang="en">A balance sheet, also known as the statement of financial condition, summarizes the status of an economic entity.</label>
+
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_ChangesInEquity" xlink:label="disclosures_ChangesInEquity" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_ChangesInEquity" xlink:to="disclosures_ChangesInEquity_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="disclosures_ChangesInEquity_lbl" xml:lang="en">A statement of changes in equity summarizes the inflows and outflows of equity for the reporting ecomic entity.</label>
+
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_ComprehensiveIncome" xlink:label="disclosures_ComprehensiveIncome" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_ComprehensiveIncome" xlink:to="disclosures_ComprehensiveIncome_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="disclosures_ComprehensiveIncome_lbl" xml:lang="en">A statement of comprehensive income summarizes the financial performance of an economic entity.</label>
+
+  </labelLink>
+</linkbase>

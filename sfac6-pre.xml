@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+
+  <link:roleRef xlink:type='simple' xlink:href='http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd#negatedLabel' roleURI='http://www.xbrl.org/2009/role/negatedLabel' />
+   <link:roleRef xlink:type='simple' xlink:href='sfac6-roles.xsd#BalanceSheet' roleURI='https://github.com/seattlemethod/sfac6/role/BalanceSheet'/>
+   <link:roleRef xlink:type='simple' xlink:href='sfac6-roles.xsd#ChangesInEquity' roleURI='https://github.com/seattlemethod/sfac6/role/ChangesInEquity'/>
+   <link:roleRef xlink:type='simple' xlink:href='sfac6-roles.xsd#ComprehensiveIncome' roleURI='https://github.com/seattlemethod/sfac6/role/ComprehensiveIncome'/>
+
+   <link:presentationLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac6/role/BalanceSheet'>
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_BalanceSheetHypercube' xlink:label='sfac6_BalanceSheetHypercube' />
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_BalanceSheetLineItems' xlink:label='sfac6_BalanceSheetLineItems' />
+      <link:presentationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='sfac6_BalanceSheetHypercube' xlink:to='sfac6_BalanceSheetLineItems'  order='1' use='optional' />
+   </link:presentationLink>
+
+
+   <link:presentationLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac6/role/BalanceSheet'>
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_BalanceSheetLineItems' xlink:label='sfac6_BalanceSheetLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_BalanceSheetArithmetic' xlink:label='sfac6_BalanceSheetArithmetic' />
+      <link:presentationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='sfac6_BalanceSheetLineItems' xlink:to='sfac6_BalanceSheetArithmetic'  order='2' use='optional' />
+   </link:presentationLink>
+
+   <link:presentationLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac6/role/BalanceSheet'>
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_BalanceSheetArithmetic' xlink:label='sfac6_BalanceSheetArithmetic' />
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_Assets' xlink:label='sfac6_Assets' />
+      <link:presentationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='sfac6_BalanceSheetArithmetic' xlink:to='sfac6_Assets'  order='3' use='optional' />
+   </link:presentationLink>
+
+
+   <link:presentationLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac6/role/BalanceSheet'>
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_BalanceSheetArithmetic' xlink:label='sfac6_BalanceSheetArithmetic' />
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_Liabilities' xlink:label='sfac6_Liabilities' />
+      <link:presentationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='sfac6_BalanceSheetArithmetic' xlink:to='sfac6_Liabilities'  order='4' use='optional' />
+   </link:presentationLink>
+
+
+   <link:presentationLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac6/role/BalanceSheet'>
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_BalanceSheetArithmetic' xlink:label='sfac6_BalanceSheetArithmetic' />
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_Equity' xlink:label='sfac6_Equity' />
+      <link:presentationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='sfac6_BalanceSheetArithmetic' xlink:to='sfac6_Equity'  order='5' use='optional' />
+   </link:presentationLink>
+
+
+   <link:presentationLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac6/role/ComprehensiveIncome'>
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_ComprehensiveIncomeStatementHypercube' xlink:label='sfac6_ComprehensiveIncomeStatementHypercube' />
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_ComprehensiveIncomeStatementLineItems' xlink:label='sfac6_ComprehensiveIncomeStatementLineItems' />
+      <link:presentationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='sfac6_ComprehensiveIncomeStatementHypercube' xlink:to='sfac6_ComprehensiveIncomeStatementLineItems'  order='11' use='optional' />
+   </link:presentationLink>
+
+
+   <link:presentationLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac6/role/ComprehensiveIncome'>
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_ComprehensiveIncomeStatementLineItems' xlink:label='sfac6_ComprehensiveIncomeStatementLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_ComprehensiveIncomeRollUp' xlink:label='sfac6_ComprehensiveIncomeRollUp' />
+      <link:presentationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='sfac6_ComprehensiveIncomeStatementLineItems' xlink:to='sfac6_ComprehensiveIncomeRollUp'  order='12' use='optional' />
+   </link:presentationLink>
+
+
+   <link:presentationLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac6/role/ComprehensiveIncome'>
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_ComprehensiveIncomeRollUp' xlink:label='sfac6_ComprehensiveIncomeRollUp' />
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_Revenues' xlink:label='sfac6_Revenues' />
+      <link:presentationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='sfac6_ComprehensiveIncomeRollUp' xlink:to='sfac6_Revenues'  order='13' use='optional' />
+   </link:presentationLink>
+
+
+
+   <link:presentationLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac6/role/ComprehensiveIncome'>
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_ComprehensiveIncomeRollUp' xlink:label='sfac6_ComprehensiveIncomeRollUp' />
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_Expenses' xlink:label='sfac6_Expenses' />
+      <link:presentationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='sfac6_ComprehensiveIncomeRollUp' xlink:to='sfac6_Expenses' preferredLabel='http://www.xbrl.org/2009/role/negatedLabel' order='14' use='optional' />
+   </link:presentationLink>
+
+   <link:presentationLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac6/role/ComprehensiveIncome'>
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_ComprehensiveIncomeRollUp' xlink:label='sfac6_ComprehensiveIncomeRollUp' />
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_Gains' xlink:label='sfac6_Gains' />
+      <link:presentationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='sfac6_ComprehensiveIncomeRollUp' xlink:to='sfac6_Gains'  order='15' use='optional' />
+   </link:presentationLink>
+
+
+   <link:presentationLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac6/role/ComprehensiveIncome'>
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_ComprehensiveIncomeRollUp' xlink:label='sfac6_ComprehensiveIncomeRollUp' />
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_Losses' xlink:label='sfac6_Losses' />
+      <link:presentationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='sfac6_ComprehensiveIncomeRollUp' xlink:to='sfac6_Losses' preferredLabel='http://www.xbrl.org/2009/role/negatedLabel' order='16' use='optional' />
+   </link:presentationLink>
+
+
+   <link:presentationLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac6/role/ComprehensiveIncome'>
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_ComprehensiveIncomeRollUp' xlink:label='sfac6_ComprehensiveIncomeRollUp' />
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_ComprehensiveIncome' xlink:label='sfac6_ComprehensiveIncome' />
+      <link:presentationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='sfac6_ComprehensiveIncomeRollUp' xlink:to='sfac6_ComprehensiveIncome'  order='17' use='optional' />
+   </link:presentationLink>
+
+
+   <link:presentationLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac6/role/ChangesInEquity'>
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_ChangesInEquityHypercube' xlink:label='sfac6_ChangesInEquityHypercube' />
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_ChangesInEquityLineItems' xlink:label='sfac6_ChangesInEquityLineItems' />
+      <link:presentationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='sfac6_ChangesInEquityHypercube' xlink:to='sfac6_ChangesInEquityLineItems'  order='51' use='optional' />
+   </link:presentationLink>
+
+   <link:presentationLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac6/role/ChangesInEquity'>
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_ChangesInEquityLineItems' xlink:label='sfac6_ChangesInEquityLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_ChangesInEquityRollForward' xlink:label='sfac6_ChangesInEquityRollForward' />
+      <link:presentationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='sfac6_ChangesInEquityLineItems' xlink:to='sfac6_ChangesInEquityRollForward'  order='52' use='optional' />
+   </link:presentationLink>
+
+
+   <link:presentationLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac6/role/ChangesInEquity'>
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_ChangesInEquityRollForward' xlink:label='sfac6_ChangesInEquityRollForward' />
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_Equity' xlink:label='sfac6_Equity' />
+      <link:presentationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='sfac6_ChangesInEquityRollForward' xlink:to='sfac6_Equity' preferredLabel='http://www.xbrl.org/2003/role/periodStartLabel' order='53' use='optional' />
+   </link:presentationLink>
+
+   <link:presentationLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac6/role/ChangesInEquity'>
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_ChangesInEquityRollForward' xlink:label='sfac6_ChangesInEquityRollForward' />
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_ComprehensiveIncome' xlink:label='sfac6_ComprehensiveIncome' />
+      <link:presentationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='sfac6_ChangesInEquityRollForward' xlink:to='sfac6_ComprehensiveIncome'  order='54' use='optional' />
+   </link:presentationLink>
+
+
+   <link:presentationLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac6/role/ChangesInEquity'>
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_ChangesInEquityRollForward' xlink:label='sfac6_ChangesInEquityRollForward' />
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_InvestmentsByOwners' xlink:label='sfac6_InvestmentsByOwners' />
+      <link:presentationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='sfac6_ChangesInEquityRollForward' xlink:to='sfac6_InvestmentsByOwners'  order='55' use='optional' />
+   </link:presentationLink>
+
+   <link:presentationLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac6/role/ChangesInEquity'>
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_ChangesInEquityRollForward' xlink:label='sfac6_ChangesInEquityRollForward' />
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_DistributionsToOwners' xlink:label='sfac6_DistributionsToOwners' />
+      <link:presentationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='sfac6_ChangesInEquityRollForward' xlink:to='sfac6_DistributionsToOwners' preferredLabel='http://www.xbrl.org/2009/role/negatedLabel' order='56' use='optional' />
+   </link:presentationLink>
+
+   <link:presentationLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac6/role/ChangesInEquity'>
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_ChangesInEquityRollForward' xlink:label='sfac6_ChangesInEquityRollForward' />
+      <link:loc xlink:type='locator' xlink:href='sfac6.xsd#sfac6_Equity' xlink:label='sfac6_Equity' />
+      <link:presentationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='sfac6_ChangesInEquityRollForward' xlink:to='sfac6_Equity' preferredLabel='http://www.xbrl.org/2003/role/periodEndLabel' order='57' use='optional' />
+   </link:presentationLink>
+
+</link:linkbase>

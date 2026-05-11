@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xmlns:dm-elr='https://github.com/seattlemethod/sfac6/dm/elr'
+  xmlns:generic='http://xbrl.org/2008/generic'
+  targetNamespace='https://github.com/seattlemethod/sfac6/dm/elr'
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+    <appinfo>
+
+         <link:roleType roleURI='https://github.com/seattlemethod/sfac6/dm/elr/role/DisclosureMechanics/BalanceSheet' id='BalanceSheet'>
+             <link:definition>Balance Sheet</link:definition>
+             <link:usedOn>link:presentationLink</link:usedOn>
+             <link:usedOn>link:calculationLink</link:usedOn>
+             <link:usedOn>link:definitionLink</link:usedOn>
+             <link:usedOn>generic:link</link:usedOn>
+         </link:roleType>
+         <link:roleType roleURI='https://github.com/seattlemethod/sfac6/dm/elr/role/DisclosureMechanics/ComprehensiveIncome' id='ComprehensiveIncome'>
+             <link:definition>Comprehensive Income</link:definition>
+             <link:usedOn>link:presentationLink</link:usedOn>
+             <link:usedOn>link:calculationLink</link:usedOn>
+             <link:usedOn>link:definitionLink</link:usedOn>
+             <link:usedOn>generic:link</link:usedOn>
+         </link:roleType>
+
+         <link:roleType roleURI='https://github.com/seattlemethod/sfac6/dm/elr/role/DisclosureMechanics/ChangesInEquity' id='ChangesInEquity'>
+             <link:definition>Changes in Equity</link:definition>
+             <link:usedOn>link:presentationLink</link:usedOn>
+             <link:usedOn>link:calculationLink</link:usedOn>
+             <link:usedOn>link:definitionLink</link:usedOn>
+             <link:usedOn>generic:link</link:usedOn>
+         </link:roleType>
+
+
+    </appinfo>
+  </annotation>
+  <import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+</schema>

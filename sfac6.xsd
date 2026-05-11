@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xmlns:nonnum='http://www.xbrl.org/dtr/type/non-numeric'
+  xmlns:num='http://www.xbrl.org/dtr/type/numeric'
+  xmlns:xbrldt='http://xbrl.org/2005/xbrldt'
+  xmlns:generic='http://xbrl.org/2008/generic'
+
+  xmlns:sfac6='https://github.com/seattlemethod/sfac6'
+  targetNamespace='https://github.com/seattlemethod/sfac6'
+
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+    <documentation>SFAC 6 Elements of Financial Statements</documentation>
+    <appinfo>
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/labelLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='sfac6-lab.xml' xlink:title='Label Links, all' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/referenceLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='sfac6-ref.xml' xlink:title='Reference Links, all' />
+    </appinfo>
+  </annotation>
+  <import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+  <import namespace='http://www.xbrl.org/2003/linkbase' schemaLocation='http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd' />
+  <import namespace='http://xbrl.org/2005/xbrldt' schemaLocation='http://www.xbrl.org/2005/xbrldt-2005.xsd' />
+  <import namespace='http://www.xbrl.org/dtr/type/non-numeric' schemaLocation='http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd' />
+  <import namespace='http://www.xbrl.org/dtr/type/numeric' schemaLocation='http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd' />
+
+  <element id='sfac6_Assets' name='Assets' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='instant' xbrli:balance='debit'  nillable='true' />
+  <element id='sfac6_BalanceSheetHypercube' name='BalanceSheetHypercube' type='xbrli:stringItemType' substitutionGroup='xbrldt:hypercubeItem' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac6_BalanceSheetLineItems' name='BalanceSheetLineItems' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac6_BalanceSheetArithmetic' name='BalanceSheetArithmetic' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac6_ChangesInEquityHypercube' name='ChangesInEquityHypercube' type='xbrli:stringItemType' substitutionGroup='xbrldt:hypercubeItem' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac6_ChangesInEquityLineItems' name='ChangesInEquityLineItems' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac6_ChangesInEquityRollForward' name='ChangesInEquityRollForward' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac6_ComprehensiveIncome' name='ComprehensiveIncome' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' xbrli:balance='credit'  nillable='true' />
+  <element id='sfac6_ComprehensiveIncomeRollUp' name='ComprehensiveIncomeRollUp' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac6_ComprehensiveIncomeStatementHypercube' name='ComprehensiveIncomeStatementHypercube' type='xbrli:stringItemType' substitutionGroup='xbrldt:hypercubeItem' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac6_ComprehensiveIncomeStatementLineItems' name='ComprehensiveIncomeStatementLineItems' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac6_DistributionsToOwners' name='DistributionsToOwners' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' xbrli:balance='debit'  nillable='true' />
+  <element id='sfac6_Equity' name='Equity' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='instant' xbrli:balance='credit'  nillable='true' />
+  <element id='sfac6_Expenses' name='Expenses' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' xbrli:balance='debit'  nillable='true' />
+  <element id='sfac6_Gains' name='Gains' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' xbrli:balance='credit'  nillable='true' />
+  <element id='sfac6_InvestmentsByOwners' name='InvestmentsByOwners' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' xbrli:balance='credit'  nillable='true' />
+  <element id='sfac6_Liabilities' name='Liabilities' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='instant' xbrli:balance='credit'  nillable='true' />
+  <element id='sfac6_Losses' name='Losses' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' xbrli:balance='debit'  nillable='true' />
+  <element id='sfac6_Revenues' name='Revenues' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' xbrli:balance='credit'  nillable='true' />
+
+</schema>
